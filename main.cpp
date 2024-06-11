@@ -1,6 +1,8 @@
+#include <filesystem>
 #include <iostream>
 
 int main() {
-	std::cout << "Hello, world!" << std::endl;
+	auto example_path = (std::filesystem::path)"foo" / "bar" / "baz";
+	std::cout << example_path << std::endl;
 	return 0;
 }
